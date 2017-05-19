@@ -1,5 +1,99 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" class="system bg-brand white">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>plangrid.github.io</title>
+
+<link rel="stylesheet" href="https://unpkg.com/basscss@8.0.2/css/basscss.css">
+
+<style>
+  :root {
+    --swatch-white: #fdfdfd;
+    --swatch-brand: #0085de;
+  }
+
+  :root {
+    font-size: 1em;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  :focus {
+    outline-color: currentColor;
+  }
+
+  :link,
+  :visited {
+    color: inherit;
+    text-decoration: underline;
+  }
+
+  .system {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  .white {
+    color: #fdfdfd;
+    color: var(--swatch-white);
+  }
+
+  .bg-brand {
+    background: #0085de;
+    background: var(--swatch-brand);
+  }
+
+  .semidecorate {
+    text-decoration: none;
+  }
+
+  .semidecorate:hover,
+  .semidecorate:active {
+    text-decoration: underline;
+  }
+
+  .fill-viewport {
+    box-sizing: border-box;
+    width: 100%;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .scale-huge {
+    font-size: 2em;
+  }
+
+  .scale-subhuge {
+    font-size: 1em;
+  }
+
+  @media (min-width: 20em) {
+    .scale-huge {
+      font-size: 3em;
+    }
+    .scale-subhuge {
+      font-size: 2em;
+    }
+  }
+
+  @media (min-width: 30em) {
+    .scale-huge {
+      font-size: 5em;
+    }
+    .scale-subhuge {
+      font-size: 2.5em;
+    }
+  }
+</style>
+
+<body class="mt0 mb0 mx-auto p3 fill-viewport flex items-center">
+
+<div>
+  <h1 class="scale-huge line-height-0 mt0 mb1"><a class="semidecorate" href="https://plangrid.com">PlanGrid</a></h1>
+  <p class="scale-subhuge line-height-0 mt0">Build with confidence.
+  <ul class="line-height-4 list-reset">
+    <li><a href="https://www.plangrid.com/jobs/">Jobs</a>
+    <li><a href="https://github.com/plangrid">Github</a>
+  </ul>
+</div>
